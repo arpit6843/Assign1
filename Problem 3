@@ -1,0 +1,71 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/arpit6843/Assign1/blob/main/Problem%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "bz8Iuc5LeJCd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "//Write a java program which will throw an exception error for an AGE field if we pass age below 25 and above 55.\n",
+        "\n",
+        "\n",
+        "public class Throw\n",
+        "{\n",
+        "    public static void validate(int AGE)\n",
+        "    {\n",
+        "       if (AGE<25 || AGE>55)\n",
+        "       {\n",
+        "          throw new ArithmeticException(\"AGE is invalid\");\n",
+        "       }\n",
+        "     else \n",
+        "     {\n",
+        "        System.out.println(\"AGE is valid\");\n",
+        "     }\n",
+        "    }\n",
+        "     \n",
+        "        public static void main(String[] args)\n",
+        "        {\n",
+        "            validate(24);\n",
+        "        }\n",
+        "    \n",
+        "}\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "gspdzl-npQCi"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
