@@ -7,10 +7,10 @@ public class Add
     {
         float a=8.6f;
         float b=9.7f;
-        float sum=float.sum(a,b);
+        float sum=a+b;
      
-        System.out.println("Enter no 1"+a);
-        System.out.println("Enter no 2"+b);
+        System.out.println("Enter no 1->"+a);
+        System.out.println("Enter no 2->"+b);
         System.out.println("Addition of 2 nos"+sum);
     }
 }
