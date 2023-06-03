@@ -1,0 +1,68 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/arpit6843/Assign1/blob/main/Problem%205\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "bz8Iuc5LeJCd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "//Run a for loop from 500 to 1000 where if loop finds number 808 then it will print the number found as 808.\n",
+        "\n",
+        "\n",
+        "public class Loop\n",
+        "{\n",
+        "    public static void main(String[] args)\n",
+        "    {\n",
+        "        int n=1000;\n",
+        "        for (int i=500;i<=n;)\n",
+        "        {\n",
+        "            if (i==808)\n",
+        "            {\n",
+        "                System.out.println(\"No found as\"+i);\n",
+        "            }\n",
+        "         else\n",
+        "         i++;\n",
+        "        }\n",
+        "    }\n",
+        "      \n",
+        "}\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "gspdzl-npQCi"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
