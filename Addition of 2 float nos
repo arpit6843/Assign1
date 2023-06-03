@@ -1,5 +1,6 @@
 //Write a java program to add two float numbers like 8.6 and 9.7.
 
+import java.io.*;
 public class Add 
 {
     public static void main (String[] args)
