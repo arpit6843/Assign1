@@ -1,20 +1,14 @@
 //Run a for loop from 500 to 1000 where if loop finds number 808 then it will print the number found as 808.
 
 import java.io.*;
-public class Loop
-{
-    public static void main(String[] args)
-    {
+public class Loop {
+    public static void main(String[] args) {
         int n=1000;
-        for (int i=500;i<=n;)
-        {
-            if (i==808)
-            {
+        for (int i=500; i<=n; i++) {
+            int m=i;
+            if (m==808)
                 System.out.println("No found as"+i);
-            }
-         else
-         i++;
         }
     }
-      
+
 }
