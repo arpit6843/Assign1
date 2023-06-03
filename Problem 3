@@ -1,6 +1,6 @@
 //Write a java program which will throw an exception error for an AGE field if we pass age below 25 and above 55.
 
-
+import java.io.*;
 public class Throw
 {
     public static void validate(int AGE)
