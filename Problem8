@@ -1,75 +1,26 @@
-{
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/arpit6843/Assign1/blob/main/Problem8\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [],
-      "metadata": {
-        "id": "bz8Iuc5LeJCd"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "//String a = \"Welcome To Java\" , count the number of space present in the sentence and \n",
-        "//print only \"Welcome\" using array.\n",
-        "\n",
-        "import java.io.*;\n",
-        "public class SpaceCount {\n",
-        " static int i,c=0,a;\n",
-        "   static int spacecount(String s) {\n",
-        "        for(i=0; i<s.length(); i++) {\n",
-        "            char ch=s.charAt(i);\n",
-        "            if(ch==' ')\n",
-        "                c++;\n",
-        "        }\n",
-        "        return c;\n",
-        "    }\n",
-        "\n",
-        "    public static void main (String args[]) {\n",
-        "        a=SpaceCount.spacecount(\"Welcome To Java\");\n",
-        "        System.out.println(\"The number of white spaces  in the String are :\"+a);\n",
-        "        String a1[] = new String[3];\n",
-        "        a1[0] = \"Welcome\";\n",
-        "        a1[1] = \"To\";\n",
-        "        a1[2] = \"Java\";\n",
-        "        for (int i = 0; i < 1; i++) {\n",
-        "            System.out.print(a1[i] + \" \");\n",
-        "        }\n",
-        "    }\n",
-        "}\n",
-        "\n"
-      ],
-      "metadata": {
-        "id": "gspdzl-npQCi"
-      },
-      "execution_count": null,
-      "outputs": []
+//String a = "Welcome To Java" , count the number of space present in the sentence and print only "Welcome" using array.
+
+import java.io.*;
+public class SpaceCount {
+ static int i,c=0,a;
+   static int spacecount(String s) {
+        for(i=0; i<s.length(); i++) {
+            char ch=s.charAt(i);
+            if(ch==' ')
+                c++;
+        }
+        return c;
     }
-  ],
-  "metadata": {
-    "colab": {
-      "name": "Welcome To Colaboratory",
-      "toc_visible": true,
-      "provenance": [],
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "display_name": "Python 3",
-      "name": "python3"
+
+    public static void main (String args[]) {
+        a=SpaceCount.spacecount("Welcome To Java");
+        System.out.println("The number of white spaces  in the String are :  "+a);
+        String a1[] = new String[3];
+        a1[0] = "Welcome";
+        a1[1] = "To";
+        a1[2] = "Java";
+        for (int i = 0; i < 1; i++) {
+            System.out.print(a1[i] + " ");
+        }
     }
-  },
-  "nbformat": 4,
-  "nbformat_minor": 0
 }
