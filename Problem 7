@@ -1,0 +1,64 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/arpit6843/Assign1/blob/main/Problem%207\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "bz8Iuc5LeJCd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "//Problem 7\n",
+        "\n",
+        "import java.io.*;\n",
+        "public class sum {\n",
+        "    public static void main(String[] args) {\n",
+        "        sum obj=new sum();\n",
+        "        obj.returnNumber();\n",
+        "   }\n",
+        "    public int returnNumber() {\n",
+        "        int c=0;\n",
+        "        float a = 7.8f;\n",
+        "        float b = 4.4f;\n",
+        "        c=(int)a+(int)b;\n",
+        "        System.out.println(\"Value of C is: \"+c);\n",
+        "        return c;\n",
+        "}}\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "gspdzl-npQCi"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
