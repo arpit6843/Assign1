@@ -1,69 +1,21 @@
+//Problem 15 - Write a java program to create a random AlphaNumeric number and Return it as a String
+
+import java.io.*;
+public class AlphanumStr {
+static String RandGeneratedStr(int l)
 {
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/arpit6843/Assign1/blob/main/Problem%2015\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [],
-      "metadata": {
-        "id": "bz8Iuc5LeJCd"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "//Problem 15 - Write a java program to create a random AlphaNumeric number and Return it as a String\n",
-        "\n",
-        "import java.io.*;\n",
-        "public class AlphanumStr {\n",
-        "static String RandGeneratedStr(int l)\n",
-        "{\n",
-        "String AlphaNumericStr =  \"qwertyuiopasdfghjklzxcvbnm0123456789\"+\"QWERTYUIOPASDFGHJKLZXCVBNM\";\n",
-        "\n",
-        "StringBuilder s = new StringBuilder(l);\n",
-        "int i;\n",
-        "for ( i=0; i<l; i++) {\n",
-        "int ch = (int)(AlphaNumericStr.length() * Math.random());\n",
-        "s.append(AlphaNumericStr.charAt(ch));\n",
-        "}\n",
-        " return s.toString();\n",
-        "}\n",
-        " public static void main(String[] args)\n",
-        "{\n",
-        "int n = 20;\n",
-        " System.out.println(AlphanumStr.RandGeneratedStr(n));\n",
-        "}}\n",
-        "\n"
-      ],
-      "metadata": {
-        "id": "gspdzl-npQCi"
-      },
-      "execution_count": null,
-      "outputs": []
-    }
-  ],
-  "metadata": {
-    "colab": {
-      "name": "Welcome To Colaboratory",
-      "toc_visible": true,
-      "provenance": [],
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "display_name": "Python 3",
-      "name": "python3"
-    }
-  },
-  "nbformat": 4,
-  "nbformat_minor": 0
+String AlphaNumericStr =  "qwertyuiopasdfghjklzxcvbnm0123456789"+"QWERTYUIOPASDFGHJKLZXCVBNM";
+
+StringBuilder s = new StringBuilder(l);
+int i;
+for ( i=0; i<l; i++) {
+int ch = (int)(AlphaNumericStr.length() * Math.random());
+s.append(AlphaNumericStr.charAt(ch));
 }
+ return s.toString();
+}
+ public static void main(String[] args)
+{
+int n = 20;
+ System.out.println(AlphanumStr.RandGeneratedStr(n));
+}}
