@@ -1,0 +1,66 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/arpit6843/Assign1/blob/main/Problem%2011\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "bz8Iuc5LeJCd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "// Problem 11- If EmpNo=123 then EmpName=Jadeja. Like this how can we keep 100 EmpName with its EmpId.\n",
+        "\n",
+        "import java.io.*;\n",
+        "public class Empdtls {\n",
+        "    String Empname[];\n",
+        "    int Empid[];\n",
+        "    String Names = \"Rohit:1,Virat:2,Ishan:3,Ashwin:4,Siraj:5,Shami:6,Rahane:7,Gill:8,Pujara:9,Thakur:10,Axar:11\";\n",
+        "    // We can declare 100 Empnames & their IDs \n",
+        " public static void main(String[] args) {\n",
+        "        Empdtls obj = new Empdtls();\n",
+        "        obj.Empname_empid();\n",
+        "    }\n",
+        "public void Empname_empid() {\n",
+        "        String[] NamesList = Names.split(\",\");\n",
+        "        for (int a = 0; a<NamesList.length; a++) {\n",
+        "            String [] Empid=NamesList[a].split(\":\");\n",
+        "            System.out.println(\"If the Empid is\"+\" \"+Empid[1]+ \" Then Empname is \"+Empid[0]);\n",
+        "        }}}\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "gspdzl-npQCi"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
