@@ -1,0 +1,63 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/arpit6843/Assign1/blob/main/Problem%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "bz8Iuc5LeJCd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "// Problem 2- From Class_A, call/print an integer variable which is present is Class B. \n",
+        "//Where use constructor to reset the value of the variable from Class_A to Class B.\n",
+        "\n",
+        "public class Class_A {\n",
+        "     int x = 10;\n",
+        "}\n",
+        "\n",
+        "\n",
+        "import java.io.*;\n",
+        "public class ClassB {\n",
+        "    public static void main(String[] args) {\n",
+        "    Class_A a = new Class_A();\n",
+        "    int y = a.x;\n",
+        "    System.out.println(y);\n",
+        "}}\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "gspdzl-npQCi"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
