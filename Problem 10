@@ -1,0 +1,84 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/arpit6843/Assign1/blob/main/Problem%2010\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "bz8Iuc5LeJCd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "// Problem 10- How can we access private data from one class to other class? \n",
+        "//Explain and write down the code for it?\n",
+        "\n",
+        "// Accessing private data from Welcome class to Test class using Reference API\n",
+        "//Welcome.java\n",
+        "package may12;\n",
+        "public class Welcome {\n",
+        "//Storing the value of the variable using private keyword\n",
+        "    private String message = \"Hello!\";\n",
+        "}\n",
+        "\n",
+        "//Test.java\n",
+        "package may12;\n",
+        "import java.io.*;\n",
+        "import java.lang.reflect.Field;\n",
+        "import may12.Welcome;\n",
+        "public class Test {\n",
+        "    public static void main(String[] args) throws IllegalArgumentException, IllegalAccessException\n",
+        "    {\n",
+        "        try {\n",
+        "            //Reference of the class\n",
+        "            Class<?> cls = Class.forName(\"may12.Welcome\");\n",
+        "            //Calling the method using reference\n",
+        "            Field field = cls.getDeclaredField(\"message\");\n",
+        "            //Allowing the variable to be accessible while runtime\n",
+        "            field.setAccessible(true);\n",
+        "            //Calling the other class \n",
+        "            Object object = field.get(new Welcome());\n",
+        "            //Typecating into String as the private data is String\n",
+        "            String result = (String) object;\n",
+        "            //Printing the private message\n",
+        "            System.out.println(result);\n",
+        "        } catch (ClassNotFoundException | NoSuchFieldException | SecurityException e) {\n",
+        "           e.printStackTrace();\n",
+        "        }\n",
+        "        }\n",
+        "    }\n"
+      ],
+      "metadata": {
+        "id": "gspdzl-npQCi"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
