@@ -1,0 +1,75 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/arpit6843/Assign1/blob/main/Problem%204\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "bz8Iuc5LeJCd"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "// Problem 4- Write a function which accepts 3 parameters. 2 integers and 1 String. If String parameter is 'add' then it would add two integers. \n",
+        "//Similarly 'subs'/'multiplication'/'division'.\n",
+        "\n",
+        "public class Pro4 {\n",
+        "public static void main(String[] args) {\n",
+        "Pro4 obj=new Pro4();\n",
+        "obj.add_twonumber();\n",
+        "}\n",
+        "public void add_twonumber() {\n",
+        "int a = 10;\n",
+        "int b = 10;\n",
+        "\n",
+        "//Add\n",
+        "String res= a+b+\"\";\n",
+        "System.out.println(a + \" + \" +b + \" = \"  + res);\n",
+        "\n",
+        "/*Sub\n",
+        "String res= a-b+\"\";\n",
+        "System.out.println(a + \" - \" +b + \" = \"  + res);\n",
+        "//Multipy\n",
+        "String res= a*b+\"\";\n",
+        "System.out.println(a + \" * \" +b + \" = \"  + res);\n",
+        "//Division\n",
+        "String res= a/b+\"\";\n",
+        "System.out.println(a + \" / \" +b + \" = \"  + res);\n",
+        "*/\n",
+        "}}\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "gspdzl-npQCi"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
